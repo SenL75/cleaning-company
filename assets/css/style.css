@@ -67,16 +67,18 @@ body{
     display: flex;
 }
 .header_mest{
-    margin: 0 8px 0 9px;
+    padding: 0 8px 0 9px;
     font-weight: 400;
     font-size: 18px;
     line-height: 22px;
+    color: white;
 }
-.header_mest:last-child{
-    margin: 0;
+.last{
+    padding-right: 0;
 }
 /* intro */
 .intro_title{
+    border-top: 1px solid rgb(255, 255, 255);
     font-weight: 700;
     font-size: 40px;
     line-height: 49px;
@@ -156,6 +158,12 @@ body{
     line-height: 29px;
     padding-bottom: 54px;
 }
+.arrow_intro{
+    position: absolute;
+    bottom: 113px;
+    left: 400px;
+    z-index: 1;
+}
 .intro_btn{
     background: #A56492;
     display: flex;
@@ -164,6 +172,7 @@ body{
     height: 91px;
     border-radius: 20px;
     justify-content: center;
+    filter: drop-shadow(0px 2px 22px #FFFFFF);
 }
 .intro_btnT{
     font-weight: 500;
@@ -179,4 +188,8 @@ a:hover{
 }
 .intro_btn:hover{
     background-color: rgb(40, 214, 92);
+}
+
+.intro{
+    position: relative;
 }
